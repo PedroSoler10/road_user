@@ -40,7 +40,8 @@ colcon build --symlink-install
 
 Create a ROS2 package
 ----
-https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.htmlInstall ros1_bridge
+https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html
+
 Create the package:
 ```
 ros2 pkg create --build-type ament_cmake <package_name>
