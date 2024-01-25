@@ -1,4 +1,4 @@
-vehicle_reaction_ros2
+road_user
 ====
 This project is part of my master thesis: "Implementation of a System to Infrastructure System for Autonomous Vehicles"
 
@@ -106,4 +106,18 @@ export ROS_HOSTNAME=10.42.0.1
 ```
 The IPs shown correspond to the HP (85) and Max (1) laptops when connected to Max's hotspot.
 
-
+Manual
+----
+Just the first time
+```
+cd
+git clone git@github.com:PedroSoler10/road_user.git
+cd road_user
+chmod +x src/reaction_pkg/reaction_pkg/reactor_node.py
+```
+Every time the code is modified
+```
+colcon build
+source install/setup.bash
+ros2 run reaction_pkg reactor_node.py
+```
