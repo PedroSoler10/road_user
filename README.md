@@ -63,7 +63,7 @@ Run a node
 ```
 cd ~/vehicle_ws  # or the root of your ROS2 workspace
 source install/setup.bash
-ros2 run reaction_pkg reactor_node
+ros2 run reaction_pkg reactor_node.py
 ```
 
 Use ros1_bridge
