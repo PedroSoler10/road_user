@@ -1,0 +1,7 @@
+# .gitignore
+
+# Ignore Catkin build and devel folders
+/build/
+/install/
+/log/
+

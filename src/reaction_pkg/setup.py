@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'reactor_node = reaction_pkg.reactor_node:main',
+            'reactor_node = reaction_pkg.reactor_node:main'
         ],
     },
 )
