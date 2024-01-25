@@ -40,7 +40,8 @@ colcon build --symlink-install
 
 Create a ROS2 package
 ----
-https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.htmlInstall ros1_bridge
+https://docs.ros.org/en/foxy/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html
+
 Create the package:
 ```
 ros2 pkg create --build-type ament_cmake <package_name>
@@ -78,7 +79,7 @@ roscore
 ```
 Open a terminal and source the ROS1 and ROS2 environments and run ros1_bridge:
 ```
-source /opt/ros/noeticsetup.bash
+source /opt/ros/noetic/setup.bash
 source /opt/ros/foxy/setup.bash
 ros2 run ros1_bridge dynamic_bridge
 ```
