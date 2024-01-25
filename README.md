@@ -79,7 +79,7 @@ roscore
 ```
 Open a terminal and source the ROS1 and ROS2 environments and run ros1_bridge:
 ```
-source /opt/ros/noeticsetup.bash
+source /opt/ros/noetic/setup.bash
 source /opt/ros/foxy/setup.bash
 ros2 run ros1_bridge dynamic_bridge
 ```
