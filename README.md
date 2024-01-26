@@ -24,7 +24,7 @@ cat ~/.ssh/max_laptop.pub
 
 Clone repository:
 ```
-git clone git@github.com:PedroSoler10/camera_infrastructure.git
+git clone git@github.com:PedroSoler10/road_user.git
 ```
 
 ROS2 Tutorials
@@ -61,9 +61,9 @@ Create a .py file in ws/src/pkg_name/pkg_name, make it executable with chmod +x 
 Run a node
 ----
 ```
-cd ~/vehicle_ws  # or the root of your ROS2 workspace
+cd ~/workspace  # or the root of your ROS2 workspace
 source install/setup.bash
-ros2 run reaction_pkg reactor_node.py
+ros2 pkg node.py
 ```
 
 Use ros1_bridge
@@ -74,7 +74,7 @@ sudo apt install ros-foxy-ros1-bridge
 ```
 Open a terminal and source the ROS1 environment and run roscore:
 ```
-source /opt/ros/noeticsetup.bash
+source /opt/ros/noetic/setup.bash
 roscore
 ```
 Open a terminal and source the ROS1 and ROS2 environments and run ros1_bridge:
@@ -88,8 +88,8 @@ Run ROS1 nodes in terminals sourced with ROS1 and the same for ROS2 nodes.
 reaction_pkg
 ----
 ```
-source-ros2
-rosrun reaction_pkg reactor_node
+source /opt/ros/foxy/setup.bash
+rosrun reaction_pkg reactor_node.py
 ```
 
 Connecting two devices via WLAN and ROS
